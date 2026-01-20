@@ -2,71 +2,98 @@
 
 import { motion } from "framer-motion";
 import { Smartphone } from "lucide-react";
+import Image from "next/image";
 
 export function FinalDownloadCTA() {
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="relative rounded-[2.5rem] bg-gradient-to-r from-blue-600 to-purple-600 overflow-hidden text-white shadow-2xl">
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-[url('/assets/smarter-bg.png')] content-center bg-center bg-no-repeat  min-h-[572px]">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 pt-12 pb-12 md:px-16 md:pt-16 md:pb-16 min-h-[400px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-[55px_64px]">
                         <div className="space-y-6 z-10">
-                            <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+                            <h2 className="text-3xl md:text-5xl font-bold leading-tight pb-[16px] mb-0">
                                 Start Building <br /> Smarter with <span className="text-blue-200">Inchaa</span>
                             </h2>
-                            <p className="text-blue-100 text-lg max-w-md">
-                                Get the app today and manage your construction projects from anywhere, anytime.
+
+
+
+                            <p className="text-[#323232] font-poppins text-[16px] font-normal leading-[150%] mb-[0px] pb-[34px]">
+                                Your complete platform for managing projects, quotes and professionals.
                             </p>
 
-                            <div className="flex gap-4 pt-4">
-                                {/* Apple Store Button Placeholder */}
-                                <button className="h-14 px-6 bg-black rounded-lg flex items-center gap-3 border border-white/10 hover:bg-gray-900 transition-colors">
-                                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black font-bold text-xl"></div>
-                                    <div className="text-left flex flex-col leading-none">
-                                        <span className="text-[10px] uppercase">Download on the</span>
-                                        <span className="text-lg font-bold">App Store</span>
-                                    </div>
-                                </button>
+                            <h4 className="text-[#323232] font-poppins text-[16px] font-semibold leading-[130%]  mb-[0px] pb-[8px]">
+                                Download Now
+                            </h4>
 
-                                {/* Play Store Button Placeholder */}
-                                <button className="h-14 px-6 bg-black rounded-lg flex items-center gap-3 border border-white/10 hover:bg-gray-900 transition-colors">
-                                    <div className="w-8 h-8 flex items-center justify-center">
-                                        <div className="w-0 h-0 border-l-[12px] border-l-white border-y-[8px] border-y-transparent ml-1" />
-                                    </div>
-                                    <div className="text-left flex flex-col leading-none">
-                                        <span className="text-[10px] uppercase">Get it on</span>
-                                        <span className="text-lg font-bold">Google Play</span>
-                                    </div>
-                                </button>
+                            <div className="flex gap-4 mb-[34px]">
+                                <Image src="/assets/apple-store.png" alt="Apple Store" width={186} height={56} />
+                                <Image src="/assets/google-play.png" alt="Google Play" width={186} height={56} />
                             </div>
+
+                            <div className="flex gap-[24px]">
+                            
+                            <div className="flex items-center gap-2">
+                                <div className="flex w-[40px] h-[40px] justify-center items-center rounded-[12px] bg-[rgba(60,73,221,0.4)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M12.5007 1.6665H5.00065C4.55862 1.6665 4.1347 1.8421 3.82214 2.15466C3.50958 2.46722 3.33398 2.89114 3.33398 3.33317V16.6665C3.33398 17.1085 3.50958 17.5325 3.82214 17.845C4.1347 18.1576 4.55862 18.3332 5.00065 18.3332H15.0007C15.4427 18.3332 15.8666 18.1576 16.1792 17.845C16.4917 17.5325 16.6673 17.1085 16.6673 16.6665V5.83317L12.5007 1.6665Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.666 1.6665V4.99984C11.666 5.44186 11.8416 5.86579 12.1542 6.17835C12.4667 6.49091 12.8907 6.6665 13.3327 6.6665H16.666" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.33268 7.5H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 10.8335H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 14.1665H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <p className="text-[#323232] font-poppins text-[14px] font-normal leading-[150%]">Request Service</p>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <div className="flex w-[40px] h-[40px] justify-center items-center rounded-[12px] bg-[rgba(60,73,221,0.4)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M12.5007 1.6665H5.00065C4.55862 1.6665 4.1347 1.8421 3.82214 2.15466C3.50958 2.46722 3.33398 2.89114 3.33398 3.33317V16.6665C3.33398 17.1085 3.50958 17.5325 3.82214 17.845C4.1347 18.1576 4.55862 18.3332 5.00065 18.3332H15.0007C15.4427 18.3332 15.8666 18.1576 16.1792 17.845C16.4917 17.5325 16.6673 17.1085 16.6673 16.6665V5.83317L12.5007 1.6665Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.666 1.6665V4.99984C11.666 5.44186 11.8416 5.86579 12.1542 6.17835C12.4667 6.49091 12.8907 6.6665 13.3327 6.6665H16.666" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.33268 7.5H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 10.8335H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 14.1665H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <p className="text-[#323232] font-poppins text-[14px] font-normal leading-[150%]">Compare Quotes</p>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <div className="flex w-[40px] h-[40px] justify-center items-center rounded-[12px] bg-[rgba(60,73,221,0.4)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M12.5007 1.6665H5.00065C4.55862 1.6665 4.1347 1.8421 3.82214 2.15466C3.50958 2.46722 3.33398 2.89114 3.33398 3.33317V16.6665C3.33398 17.1085 3.50958 17.5325 3.82214 17.845C4.1347 18.1576 4.55862 18.3332 5.00065 18.3332H15.0007C15.4427 18.3332 15.8666 18.1576 16.1792 17.845C16.4917 17.5325 16.6673 17.1085 16.6673 16.6665V5.83317L12.5007 1.6665Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.666 1.6665V4.99984C11.666 5.44186 11.8416 5.86579 12.1542 6.17835C12.4667 6.49091 12.8907 6.6665 13.3327 6.6665H16.666" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.33268 7.5H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 10.8335H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3327 14.1665H6.66602" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <p className="text-[#323232] font-poppins text-[14px] font-normal leading-[150%]">Track Progress</p>
+                            </div>
+                            </div>
+
+
                         </div>
 
-                        <div className="relative h-full min-h-[300px] flex items-end justify-center md:items-end md:justify-end">
-                            {/* Hand holding phone mockup */}
+                        <div className="h-full flex items-end justify-center md:items-end md:justify-end">
                             <motion.div
                                 initial={{ y: 100, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="relative w-[300px] md:w-[350px] aspect-[9/18] translate-y-[20%]"
+                                // className="relative w-[300px] md:w-[350px] aspect-[9/18] translate-y-[20%]"
                             >
-                                {/* Phone */}
-                                <div className="absolute inset-0 bg-black rounded-[40px] border-[8px] border-black overflow-hidden z-20 shadow-2xl">
-                                    <div className="w-full h-full bg-white flex flex-col">
-                                        <div className="h-16 bg-blue-600 w-full" />
-                                        <div className="p-4 space-y-3">
-                                            <div className="h-32 bg-gray-100 rounded-xl" />
-                                            <div className="h-32 bg-gray-100 rounded-xl" />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Hand Shape Placeholder - A somewhat complex shape to CSS, using a simple rounded rect rotated for now or omission if too complex. Sticking to phone floating for cleanliness unless requested specifically */}
+                            <div className="absolute bottom-0 right-40 w-[470px] h-[520px]">
+                                <Image
+                                    src="/assets/smarter-phone.png"
+                                    alt="Phone"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                             </motion.div>
                         </div>
                     </div>
-
-                    {/* Decorative Circles */}
-                    <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-                    <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4" />
                 </div>
             </div>
         </section>
