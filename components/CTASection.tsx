@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export function CTASection() {
     return (
-        <section className="py-24">
+        <section className="py-12 md:py-24">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="relative rounded-[2.5rem] bg-gray-900 overflow-hidden px-6 py-16 md:px-16 md:py-24 text-center md:text-left">
 

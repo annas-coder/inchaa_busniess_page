@@ -5,7 +5,7 @@ import { Play } from "lucide-react";
 
 export function VideoSection() {
     return (
-        <section className="py-50 pb-20">
+        <section className="py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -14,9 +14,9 @@ export function VideoSection() {
                     transition={{ duration: 0.5 }}
                     className="mb-12"
                 >
-                    <h2 className="text-[#1D2030] text-center font-poppins text-[34px] font-bold leading-[140%]">
+                    <h2 className="text-[#1D2030] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[140%]">
                         One Platform Connecting Everyone in the <br className="hidden md:block" />
-                        <span className="text-[#3743D8] font-poppins text-[34px] font-bold leading-[140%]">Construction Ecosystem</span>
+                        <span className="text-[#3743D8] font-poppins text-[24px] md:text-[34px] font-bold leading-[140%]">Construction Ecosystem</span>
                     </h2>
                 </motion.div>
 

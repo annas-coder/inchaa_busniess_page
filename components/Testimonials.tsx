@@ -1,10 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Image from "next/image";
 
-const testimonials = [
+const customerTestimonials = [
     {
         quote: "Inchaa made finding a reliable electrician so easy! Got multiple quotes within hours and the work was completed professionally. Highly recommend!",
         author: "أحمد الحمادي",
@@ -25,23 +26,71 @@ const testimonials = [
     },
 ];
 
+const providerTestimonials = [
+    {
+        quote: "Inchaa has transformed my business! I get quality leads daily and the platform makes it so easy to manage quotes and projects. My bookings have increased by 40%.",
+        author: "محمد العلي",
+        role: "Electrician, Dubai",
+        stars: 5,
+    },
+    {
+        quote: "The best part about Inchaa is the direct communication with customers. No more back-and-forth emails - everything is organized in one place. Highly efficient!",
+        author: "سارة النعيمي",
+        role: "Plumber, Abu Dhabi",
+        stars: 5,
+    },
+    {
+        quote: "As a consultant, Inchaa helps me showcase my expertise to the right clients. The verification badge gives me credibility and I've built a strong reputation on the platform.",
+        author: "علي الشامسي",
+        role: "Construction Consultant, Sharjah",
+        stars: 5,
+    },
+];
+
 export function Testimonials() {
+    const [activeTab, setActiveTab] = useState<"customers" | "providers">("customers");
+    const testimonials = activeTab === "customers" ? customerTestimonials : providerTestimonials;
+
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 md:py-20 bg-gray-50">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center mb-[48px]">
-                    <h2 className="text-[#1D2030] text-center font-poppins text-[34px] font-bold leading-[130%] pb-[16px]">What Our Users Say</h2>
+                <div className="text-center mb-8 md:mb-[48px]">
+                    <h2 className="text-[#1D2030] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[16px]">What Our Users Say</h2>
                     <p className="text-[#76797B] text-center font-poppins text-base font-normal leading-6">
                     Hear from customers and service providers who trust Inchaa for their needs
                     </p>
                 </div>
 
-                <div className="flex items-center justify-center mb-[48px]">
-                    <button className="flex flex-col items-center justify-center px-6 py-3 rounded-full bg-[#3C49DD] shadow-md text-white text-center font-poppins text-[14px] font-semibold leading-[130%]">Customers & Builders</button>
-                    <button className="flex flex-col items-center justify-center px-6 py-3 text-[#76797B] text-center font-poppins text-[14px] font-normal leading-[150%]">Service Providers</button>
+                <div className="flex items-center justify-center mb-8 md:mb-[48px]">
+                    <button 
+                        onClick={() => setActiveTab("customers")}
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all ${
+                            activeTab === "customers" 
+                                ? "bg-[#3C49DD] text-white" 
+                                : "bg-transparent text-[#76797B] hover:bg-gray-100"
+                        }`}
+                    >
+                        Customers & Builders
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab("providers")}
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all ${
+                            activeTab === "providers" 
+                                ? "bg-[#3C49DD] text-white" 
+                                : "bg-transparent text-[#76797B] hover:bg-gray-100"
+                        }`}
+                    >
+                        Service Providers
+                    </button>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <motion.div 
+                    key={activeTab}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                >
                     {testimonials.map((item, idx) => (
                         <motion.div
                             key={idx}
@@ -71,7 +120,7 @@ export function Testimonials() {
                             </div>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

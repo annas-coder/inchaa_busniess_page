@@ -31,7 +31,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 md:px-6 py-12 md:pt-24 text-center max-w-[990px] mx-auto"
       >
-        <h2 className="text-[#323232] text-center font-poppins text-[34px] font-bold leading-[130%] pb-[8px]">
+        <h2 className="text-[#323232] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[8px]">
           Plan smarter. Compare better. Build with confidence.
         </h2>
         <p className="text-[#76797B] text-center font-poppins text-[16px] font-normal leading-[150%] pb-[16px]">
@@ -42,7 +42,7 @@ export default function Home() {
         </button>
       </motion.div>
 
-      <section className="container bg-white mx-auto p-[40px] rounded-[20px] flex flex-col items-center gap-[60px]">
+      <section className="container bg-white mx-auto p-6 md:p-[40px] rounded-[20px] flex flex-col items-center gap-8 md:gap-[60px]">
 
         {/* Feature 1 */}
         <FeatureHighlight
@@ -103,7 +103,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 md:px-6 py-12 md:pt-24 text-center max-w-[990px] mx-auto"
       >
-        <h2 className="text-[#323232] text-center font-poppins text-[34px] font-bold leading-[130%] pb-[8px]">
+        <h2 className="text-[#323232] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[8px]">
           Get discovered. Win more projects. Work smarter.
         </h2>
         <p className="text-[#76797B] text-center font-poppins text-[16px] font-normal leading-[150%] pb-[16px]">
@@ -114,7 +114,7 @@ export default function Home() {
         </button>
       </motion.div>
 
-      <section className="container bg-white mx-auto p-[40px] rounded-[20px] flex flex-col items-center gap-[60px]">
+      <section className="container bg-white mx-auto p-6 md:p-[40px] rounded-[20px] flex flex-col items-center gap-8 md:gap-[60px]">
         <FeatureHighlight
           imageSide="right"
           gradient="from-pink-100/50 to-purple-100/50"

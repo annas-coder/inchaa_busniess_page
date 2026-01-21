@@ -6,6 +6,8 @@ import Image from "next/image";
 
 export function Hero() {
     return (
+
+        <div className="lg:h-[1024px] sm:h-full">
         <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-[url('/assets/hero-banner-overlay.png')] bg-cover bg-center">
             {/* Background decoration */}
             <div className="relative top-0 left-0 w-full h-full -z-10">
@@ -96,13 +98,13 @@ text-white text-center font-poppins text-base font-semibold leading-[130%]">
 
                 </div>
 
-                {/* Floating cards at bottom of hero area */}
-                <div className="relative mt-12 md:absolute md:bottom-[-100px] md:left-0 w-full z-10">
+                {/* Floating cards at bottom of hero area - Desktop only */}
+                <div className=" md:flex md:absolute md:bottom-[-100px] md:left-0 w-full z-10 hidden lg:block">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.8 }}
-                        className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[100px] p-8 md:p-12 max-w-4xl mx-auto rounded-[24px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px]"
+                        className="flex flex-row items-center justify-center gap-4 md:gap-[100px] p-6 md:p-12 max-w-4xl mx-auto rounded-[24px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px]"
                     >
                         <div className="flex flex-col items-center  gap-[12px]">
                             <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
@@ -143,5 +145,6 @@ text-white text-center font-poppins text-base font-semibold leading-[130%]">
                 </div>
             </div>
         </section>
+        </div>
     );
 }

@@ -16,7 +16,7 @@ interface FeatureHighlightProps {
 
 export function FeatureHighlight({ title, description, points, imageSide = "left", gradient = "from-purple-100 to-blue-100", pointsTitle, imagePath }: FeatureHighlightProps) {
     return (
-        <div className={`flex flex-col gap-10 lg:gap-[60px] items-center w-full ${imageSide === "right" ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
+        <div className={`flex flex-col gap-6 md:gap-10 lg:gap-[60px] items-center w-full ${imageSide === "right" ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
 
             {/* Content Side */}
             <motion.div
@@ -24,7 +24,7 @@ export function FeatureHighlight({ title, description, points, imageSide = "left
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="flex-1 space-y-8 px-0 lg:p-[0px_40px]"
+                className="flex-1 space-y-8 px-0 lg:p-[0px_40px] order-2 lg:order-none"
             >
                 <h2 className="text-[#323232] font-poppins text-[24px] font-bold leading-[130%] pb-[16px] mb-0">
                     {title}
@@ -54,7 +54,7 @@ export function FeatureHighlight({ title, description, points, imageSide = "left
             </motion.div>
 
             {/* Image Side */}
-            <div className="flex-1 w-full">
+            <div className="flex-1 w-full order-1 lg:order-none">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
