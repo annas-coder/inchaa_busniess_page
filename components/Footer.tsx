@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Footer() {
     return (
-        <footer className="bg-gray-800 py-12">
+        <footer className="bg-white py-12 border-t border-[#E0E4EB]">
             <div className="container mx-auto px-4 md:px-6">
                 {/* White content container */}
                 <div className="bg-white rounded-lg p-8 md:p-12">
@@ -43,7 +43,7 @@ export function Footer() {
                     </div>
 
                     {/* Bottom: Copyright */}
-                    <div className="border-t border-gray-100 pt-8">
+                    <div className="border-t border-[#E0E4EB] pt-8">
                         <p className="text-center text-gray-500 text-sm font-sans">
                             © {new Date().getFullYear()} Inchaa Technologies. All rights reserved.
                         </p>
