@@ -58,7 +58,7 @@ export default function Home() {
             "Shortlist professionals with confidence",
             "Avoid unverified or unreliable providers"
           ]}
-          imagePath="/assets/planner-img-1.png"
+          imagePath="/assets/professional.webp"
         />
 
         {/* Feature 2 */}
@@ -75,7 +75,7 @@ export default function Home() {
             "Negotiate directly on the platform",
             "No hidden fees"
           ]}
-          imagePath="/assets/planner-img-2.png"
+          imagePath="/assets/request-compare.webp"
         />
 
         {/* Feature 3 */}
@@ -91,7 +91,7 @@ export default function Home() {
             "Document storage and sharing",
             "Real-time chat and updates"
           ]}
-          imagePath="/assets/planner-img-3.png"
+          imagePath="/assets/managing-project.webp"
         />
 
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
             "Submit quotations professionally and track responses",
             "Manage projects, status updates, and customer communication from one portal",
           ]}
-          imagePath="/assets/planner-img-1.png"
+          imagePath="/assets/analysis-laptop.webp"
         />
       </section>
 

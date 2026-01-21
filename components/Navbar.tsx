@@ -51,12 +51,12 @@ export function Navbar() {
                     </Link>
                 </div>
 
-                <div className="flex items-center gap-12">
+                <div className="flex items-center gap-4 md:gap-12">
                     <span className="hidden md:block text-sm font-medium">Join as Provider</span>
-                    <button className="bg-[linear-gradient(108deg,#39F_0%,#3040E8_50%,#8C3CDD_100%)] text-white px-5 py-2.5 rounded-[16px] text-sm font-medium transition-all shadow-lg shadow-blue-600/20">
+                    <button className="bg-[linear-gradient(108deg,#39F_0%,#3040E8_50%,#8C3CDD_100%)] text-white px-3 py-2 md:px-5 md:py-2.5 rounded-[16px] text-xs md:text-sm font-medium transition-all shadow-lg shadow-blue-600/20 whitespace-nowrap">
                         Get the App
                     </button>
-                    <button className="md:hidden p-2">
+                    <button className="md:hidden p-2 text-gray-700">
                         <Menu className="w-6 h-6" />
                     </button>
                 </div>

@@ -16,7 +16,7 @@ interface FeatureHighlightProps {
 
 export function FeatureHighlight({ title, description, points, imageSide = "left", gradient = "from-purple-100 to-blue-100", pointsTitle, imagePath }: FeatureHighlightProps) {
     return (
-        <div className={`flex flex-col gap-[60px] items-center w-full ${imageSide === "right" ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
+        <div className={`flex flex-col gap-10 lg:gap-[60px] items-center w-full ${imageSide === "right" ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
 
             {/* Content Side */}
             <motion.div
@@ -24,7 +24,7 @@ export function FeatureHighlight({ title, description, points, imageSide = "left
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="flex-1 space-y-8 p-[0px_40px]"
+                className="flex-1 space-y-8 px-0 lg:p-[0px_40px]"
             >
                 <h2 className="text-[#323232] font-poppins text-[24px] font-bold leading-[130%] pb-[16px] mb-0">
                     {title}
@@ -60,15 +60,17 @@ export function FeatureHighlight({ title, description, points, imageSide = "left
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className={`relative aspect-square md:aspect-[4/3] rounded-3xl bg-gradient-to-br ${gradient} p-8 md:p-12 overflow-hidden shadow-sm`}
+                    className={`relative aspect-square md:aspect-[4/3] rounded-3xl ${gradient} p-8 md:p-12 overflow-hidden`}
                 >
 
-                    <Image
-                        src={imagePath || "/assets/planner-img-1.png"}
-                        alt="Feature Highlight"
-                        fill
-                        className="object-cover"
-                    />
+                    <div className="h-[300px] md:h-[550px] w-full">
+                        <Image
+                            src={imagePath || ""}
+                            alt="Feature Highlight"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
