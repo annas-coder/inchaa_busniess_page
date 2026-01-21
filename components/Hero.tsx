@@ -33,7 +33,7 @@ export function Hero() {
                         </h1>
 
                         <p className="text-[#323232] font-poppins text-base font-normal leading-6 w-[628px]">
-                        Inchaa is a digital platform that connects customers with verified contractors, and consultants. Find trusted professionals, request quotations, and manage projects in one seamless experience.
+                            Inchaa is a digital platform that connects customers with verified contractors, and consultants. Find trusted professionals, request quotations, and manage projects in one seamless experience.
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -71,33 +71,38 @@ text-white text-center font-poppins text-base font-semibold leading-[130%]">
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="relative lg:h-[600px] flex items-center justify-center"
                     >
-                       <Image src="/assets/banner-image.png" alt="Inchaa" width={460} height={481} />
+                        <Image src="/assets/banner-image.png" alt="Inchaa" width={460} height={481} />
                     </motion.div>
 
                 </div>
 
                 {/* Floating cards at bottom of hero area */}
                 <div className="absolute bottom-[-100px] left-0 w-full">
-                    <div className="flex items-center justify-center gap-[100px] p-12 max-w-4xl mx-auto rounded-[24px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px]">
-                            <div className="flex flex-col items-center  gap-[12px]">
-                                <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
-                                    <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
-                                </div>
-                                <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Customers</p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.8 }}
+                        className="flex items-center justify-center gap-[100px] p-12 max-w-4xl mx-auto rounded-[24px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px]"
+                    >
+                        <div className="flex flex-col items-center  gap-[12px]">
+                            <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
+                                <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
                             </div>
-                            <div className="flex flex-col items-center  gap-[12px]">
-                                <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
-                                    <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
-                                </div>
-                                <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Contractors</p>
+                            <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Customers</p>
+                        </div>
+                        <div className="flex flex-col items-center  gap-[12px]">
+                            <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
+                                <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
                             </div>
-                            <div className="flex flex-col items-center  gap-[12px]">
-                                <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
-                                    <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
-                                </div>
-                                <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Contractors</p>
+                            <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Contractors</p>
+                        </div>
+                        <div className="flex flex-col items-center  gap-[12px]">
+                            <div className="flex w-[64px] h-[64px] justify-center items-center rounded-[16px] bg-[#3C49DD] shadow-[0_8px_24px_0_rgba(100,100,150,0.12)]">
+                                <Image src="/assets/user-icon.png" alt="Builders" className="object-contain" width={32} height={32} />
                             </div>
-                    </div>
+                            <p className="text-[#323232] text-center font-poppins text-sm font-semibold leading-[130%]">Contractors</p>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
