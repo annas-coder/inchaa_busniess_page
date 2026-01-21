@@ -75,7 +75,7 @@ export function Testimonials() {
                 <div className="flex items-center justify-center mb-8 md:mb-[48px]">
                     <button 
                         onClick={() => setActiveTab("customers")}
-                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
                             activeTab === "customers" 
                                 ? "bg-[#3C49DD] text-white" 
                                 : "bg-transparent text-[#76797B] hover:bg-gray-100"
@@ -85,7 +85,7 @@ export function Testimonials() {
                     </button>
                     <button 
                         onClick={() => setActiveTab("providers")}
-                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
                             activeTab === "providers" 
                                 ? "bg-[#3C49DD] text-white" 
                                 : "bg-transparent text-[#76797B] hover:bg-gray-100"
@@ -115,15 +115,19 @@ export function Testimonials() {
                                <Image src="/assets/double-quote.png" alt="Quote" width={32} height={48} className="pb-[16px]" />
                                 <p className="text-[#76797B] font-poppins text-[16px] font-normal leading-[150%]">"{item.quote}"</p>
                             </div>
-                            <div className="flex items-center gap-4">
-                                <div className="flex w-[48px] h-[48px] justify-center items-center shrink-0 rounded-full bg-[rgba(60,73,221,0.1)] text-[#3743D8] font-poppins text-[16px] font-semibold leading-[130%] text-center" >
-                                أح
+                            <div className="flex justify-between items-center">
+                               
+                               <div className="flex items-center gap-4">
+                                    <div className="flex w-[48px] h-[48px] justify-center items-center shrink-0 rounded-full bg-[rgba(60,73,221,0.1)] text-[#3743D8] font-poppins text-[16px] font-semibold leading-[130%] text-center" >
+                                    أح
+                                    </div>
+                                    <div>
+                                        <div className="text-[#323232] font-poppins text-[16px] font-semibold leading-[130%]">{item.author}</div>
+                                        <div className="text-[#76797B] font-poppins text-[14px] font-normal leading-[150%]">{item.role}</div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div className="text-[#323232] font-poppins text-[16px] font-semibold leading-[130%]">{item.author}</div>
-                                    <div className="text-[#76797B] font-poppins text-[14px] font-normal leading-[150%]">{item.role}</div>
-                                </div>
-                                <div className="flex gap-1 mb-4">
+                                
+                                <div className="flex gap-1">
                                     {[...Array(item.stars)].map((_, i) => (
                                         <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                                     ))}

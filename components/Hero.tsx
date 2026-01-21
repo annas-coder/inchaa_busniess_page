@@ -47,7 +47,13 @@ export function Hero() {
                         </div>
 
                         <h1 className="max-w-max text-[#323232] font-poppins text-[32px] md:text-[64px] font-bold leading-[110%]">
-                            Build Smarter with <span className="text-blue-600">Inchaa</span>
+                            Build Smarter with <span className=" bg-[linear-gradient(112deg,#3399FF_0%,#3040E8_50%,#8C3CDD_100%)]
+  bg-clip-text
+  text-transparent
+  font-poppins
+  text-[64px]
+  font-bold
+  leading-[110%]">Inchaa</span>
                         </h1>
 
                         <p className="text-[#323232] font-poppins text-base font-normal leading-6 w-full max-w-[628px]">
