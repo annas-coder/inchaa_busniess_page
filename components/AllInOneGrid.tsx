@@ -64,6 +64,11 @@ export function AllInOneGrid() {
         <section className="py-12 md:py-24">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-8 md:mb-16">
+                    <div className="flex items-center justify-center mb-6">
+                        <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white/70 shadow-sm backdrop-blur-[10px] max-w-max">
+                            <span className="text-center text-[#76797B] font-poppins text-sm font-normal leading-[1.5]">Features</span>
+                        </div>
+                    </div>
                     <h2 className="text-[#1D2030] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[16px]">Everything You Need,
                         <span className="bg-clip-text text-transparent bg-[linear-gradient(106deg,#39F_0%,#3040E8_50%,#8C3CDD_100%)] font-poppins text-[24px] md:text-[34px] font-bold leading-[130%]">
                             All in One Place</span></h2>

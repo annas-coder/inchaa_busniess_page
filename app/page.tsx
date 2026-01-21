@@ -31,6 +31,11 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 md:px-6 py-12 md:pt-24 text-center max-w-[990px] mx-auto"
       >
+        <div className="flex items-center justify-center mb-6">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white/70 shadow-sm backdrop-blur-[10px] max-w-max">
+            <span className="text-center text-[#76797B] font-poppins text-sm font-normal leading-[1.5]">For Customers</span>
+          </div>
+        </div>
         <h2 className="text-[#323232] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[8px]">
           Plan smarter. Compare better. Build with confidence.
         </h2>
@@ -103,6 +108,11 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 md:px-6 py-12 md:pt-24 text-center max-w-[990px] mx-auto"
       >
+        <div className="flex items-center justify-center mb-6">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white/70 shadow-sm backdrop-blur-[10px] max-w-max">
+            <span className="text-center text-[#76797B] font-poppins text-sm font-normal leading-[1.5]">For Service Providers (Web Portal Experience)</span>
+          </div>
+        </div>
         <h2 className="text-[#323232] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[8px]">
           Get discovered. Win more projects. Work smarter.
         </h2>

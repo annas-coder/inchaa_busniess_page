@@ -40,6 +40,11 @@ export function HelpSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
+                <div className="flex items-center justify-center mb-6">
+                    <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white/70 shadow-sm backdrop-blur-[10px] max-w-max">
+                        <span className="text-center text-[#76797B] font-poppins text-sm font-normal leading-[1.5]">Help & Support</span>
+                    </div>
+                </div>
                 <h2 className="text-[#1D2030] text-center font-poppins text-[24px] md:text-[34px] font-bold leading-[130%] pb-[16px]">We're Here to Help You 
                     <span className="ps-3 bg-clip-text text-transparent bg-[linear-gradient(106deg,#39F_0%,#3040E8_50%,#8C3CDD_100%)] font-poppins text-[24px] md:text-[34px] font-bold leading-[130%]">
                       Succeed</span>
