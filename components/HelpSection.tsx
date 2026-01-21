@@ -6,20 +6,20 @@ import { Plus, Minus, HelpCircle, Mail, MessageCircle } from "lucide-react";
 
 const faqData = [
     {
-        question: "How do I verify a professional's credentials?",
-        answer: "All professionals on Inchaa undergo a thorough verification process before being listed. You can view their verification badges, certifications, portfolio, and customer reviews directly on their profile. Additionally, you can contact professionals directly through the platform to request specific documentation or references."
+        question: "How do I post a project or request a quote?",
+        answer: "To post a project, simply create an account on Inchaa, click 'Post a Project', fill in your project details including location, requirements, and upload any relevant documents. Once submitted, verified professionals in your area will be able to view your project and submit quotations. You can then compare quotes and select the best option for your needs."
     },
     {
-        question: "Is there a fee for posting a project?",
-        answer: "Posting a project on Inchaa is completely free. There are no upfront fees or charges for creating a project listing and receiving quotations from professionals. You only pay for the services once you've hired a professional and the work is completed to your satisfaction."
+        question: "How do I get verified as a contractor or consultant?",
+        answer: "To get verified, sign up as a service provider on Inchaa and complete your profile with business information, certifications, licenses, and portfolio. Our verification team will review your credentials and documents. Once approved, you'll receive a verified badge and can start receiving project requests from customers."
     },
     {
-        question: "How does the secure payment escrow work?",
-        answer: "Inchaa uses a secure escrow system to protect both you and the professional. When you accept a quotation and hire a professional, the agreed payment amount is held securely in escrow. The funds are only released to the professional once project milestones are met and you confirm satisfaction with the completed work. This ensures quality assurance and protects your investment."
+        question: "Is Inchaa free to use?",
+        answer: "Yes, Inchaa is free for customers to post projects and request quotes. There are no fees for creating an account, posting projects, or receiving quotations. Service providers can join and create profiles for free, with optional premium features available for enhanced visibility and project management tools."
     },
     {
-        question: "Can I cancel a project after hiring?",
-        answer: "Yes, you can cancel a project, but cancellation terms depend on the project status and what was agreed upon with the professional. If work has already begun, cancellation fees may apply as outlined in your agreement. For projects that haven't started, you can typically cancel without penalty. Always review the terms before confirming your project to understand the cancellation policy."
+        question: "Can I contact support for onboarding help?",
+        answer: "Absolutely! Our onboarding team is here to help you get started. You can reach out via email at support@inchaa.com or use our in-app chat feature available 24/7. Our support team can assist with account setup, profile creation, project posting, and answer any questions about using the platform."
     }
 ];
 
@@ -124,7 +124,7 @@ export function HelpSection() {
 
                                 <div className="space-y-4">
                                     <motion.button 
-                                        className="rounded-[12px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px] flex items-center gap-[12px] self-stretch p-[16px] w-full"
+                                        className="rounded-[12px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px] flex items-center gap-[12px] self-stretch p-[16px] w-full cursor-pointer"
                                         whileHover={{ scale: 1.02, y: -2 }}
                                         whileTap={{ scale: 0.98 }}
                                         transition={{ duration: 0.2 }}
@@ -141,7 +141,7 @@ export function HelpSection() {
                                         </div>
                                     </motion.button>
                                     <motion.button 
-                                        className="rounded-[12px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px] flex items-center gap-[12px] self-stretch p-[16px] w-full"
+                                        className="rounded-[12px] border border-white/40 bg-white/70 shadow-[0_8px_32px_0_rgba(100,100,150,0.12)] backdrop-blur-[10px] flex items-center gap-[12px] self-stretch p-[16px] w-full cursor-pointer"
                                         whileHover={{ scale: 1.02, y: -2 }}
                                         whileTap={{ scale: 0.98 }}
                                         transition={{ duration: 0.2 }}

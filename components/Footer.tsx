@@ -30,14 +30,11 @@ export function Footer() {
                             <Link href="/" className="hover:text-gray-700 transition-colors">
                                 Home
                             </Link>
-                            <Link href="#" className="hover:text-gray-700 transition-colors">
+                            <Link href="/terms" className="hover:text-gray-700 transition-colors">
                                 Terms
                             </Link>
-                            <Link href="#" className="hover:text-gray-700 transition-colors">
+                            <Link href="/privacy" className="hover:text-gray-700 transition-colors">
                                 Privacy
-                            </Link>
-                            <Link href="#" className="hover:text-gray-700 transition-colors">
-                                Contact
                             </Link>
                         </nav>
                     </div>

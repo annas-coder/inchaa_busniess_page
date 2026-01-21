@@ -75,7 +75,7 @@ export function Testimonials() {
                 <div className="flex items-center justify-center mb-8 md:mb-[48px]">
                     <button 
                         onClick={() => setActiveTab("customers")}
-                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all ${
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
                             activeTab === "customers" 
                                 ? "bg-[#3C49DD] text-white" 
                                 : "bg-transparent text-[#76797B] hover:bg-gray-100"
@@ -85,7 +85,7 @@ export function Testimonials() {
                     </button>
                     <button 
                         onClick={() => setActiveTab("providers")}
-                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all ${
+                        className={`flex flex-col items-center justify-center px-6 py-3 rounded-full shadow-md text-center font-poppins text-[14px] font-semibold leading-[130%] transition-all cursor-pointer ${
                             activeTab === "providers" 
                                 ? "bg-[#3C49DD] text-white" 
                                 : "bg-transparent text-[#76797B] hover:bg-gray-100"

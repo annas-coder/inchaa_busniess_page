@@ -10,7 +10,7 @@ const features = [
             <path d="M9 12L11 14L15 10" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
         title: "Verified Professionals",
-        description: "Access a vetted network of pros you can trust."
+        description: "Access contractors, and consultants with verified credentials."
     },
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -18,7 +18,7 @@ const features = [
             <path d="M10.3008 21C10.4682 21.3044 10.7142 21.5583 11.0133 21.7352C11.3123 21.912 11.6534 22.0053 12.0008 22.0053C12.3482 22.0053 12.6892 21.912 12.9883 21.7352C13.2873 21.5583 13.5334 21.3044 13.7008 21" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
         title: "Real-time Notifications",
-        description: "Stay updated with instant text & app notifications."
+        description: "Stay informed with instant updates on quotes and project status."
     },
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -27,8 +27,8 @@ const features = [
             <path d="M12 12V18" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M15 15L12 12L9 15" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
-        title: "Secure Payment Escrow",
-        description: "Payments are held secure until milestones are met."
+        title: "Secure Document Uploads",
+        description: "Upload and share project documents with end-to-end security."
     },
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -37,15 +37,15 @@ const features = [
             <path d="M13 17V5" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M8 17V14" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
-        title: "Easy Comparisons",
-        description: "Compare quotes side-by-side to make the best choice."
+        title: "Quote Comparison",
+        description: "Compare quotations side-by-side with transparent pricing."
     },
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M11.525 2.29502C11.5688 2.20648 11.6365 2.13195 11.7204 2.07984C11.8044 2.02773 11.9012 2.00012 12 2.00012C12.0988 2.00012 12.1956 2.02773 12.2795 2.07984C12.3634 2.13195 12.4311 2.20648 12.475 2.29502L14.785 6.97402C14.9371 7.28198 15.1618 7.54842 15.4396 7.75047C15.7174 7.95251 16.0401 8.08413 16.38 8.13402L21.546 8.89002C21.6439 8.9042 21.7358 8.94549 21.8115 9.00921C21.8871 9.07294 21.9434 9.15656 21.974 9.25062C22.0046 9.34468 22.0082 9.44542 21.9846 9.54145C21.9609 9.63748 21.9108 9.72497 21.84 9.79402L18.104 13.432C17.8576 13.6721 17.6732 13.9685 17.5668 14.2956C17.4604 14.6228 17.435 14.9709 17.493 15.31L18.375 20.45C18.3922 20.5479 18.3817 20.6486 18.3445 20.7407C18.3073 20.8328 18.2449 20.9126 18.1645 20.971C18.0841 21.0294 17.9889 21.064 17.8898 21.0709C17.7907 21.0778 17.6917 21.0567 17.604 21.01L12.986 18.582C12.6817 18.4222 12.3431 18.3388 11.9995 18.3388C11.6558 18.3388 11.3173 18.4222 11.013 18.582L6.39597 21.01C6.3083 21.0564 6.20937 21.0773 6.11042 21.0703C6.01147 21.0632 5.91649 21.0286 5.83626 20.9702C5.75604 20.9119 5.6938 20.8322 5.65662 20.7402C5.61945 20.6483 5.60883 20.5477 5.62597 20.45L6.50697 15.311C6.56516 14.9717 6.53995 14.6234 6.43351 14.2961C6.32706 13.9687 6.14258 13.6722 5.89597 13.432L2.15997 9.79502C2.08856 9.72605 2.03796 9.63841 2.01393 9.54209C1.9899 9.44577 1.99341 9.34463 2.02405 9.25021C2.05469 9.15578 2.11124 9.07186 2.18725 9.008C2.26326 8.94414 2.35567 8.90291 2.45397 8.88902L7.61897 8.13402C7.95923 8.08451 8.28236 7.95307 8.56055 7.751C8.83875 7.54893 9.06367 7.28229 9.21597 6.97402L11.525 2.29502Z" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
-        title: "Direct Chat",
-        description: "Chat directly with pros to clarify details."
+        title: "Ratings & Reviews",
+        description: "Make informed decisions based on verified user feedback."
     },
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -55,7 +55,7 @@ const features = [
             <path d="M16 10V16" stroke="#3743D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>,
         title: "Project Management",
-        description: "Tools to organize timelines, tasks, and budgets."
+        description: "Track all your properties and projects in one dashboard."
     }
 ];
 

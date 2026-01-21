@@ -5,6 +5,22 @@ import { ArrowRight, Play, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
+
+    const imageArr = [
+        {
+            imagePath : "/assets/profile-image-1.png"
+        },
+        {
+            imagePath : "/assets/profile-image-2.png"
+        },
+        {
+            imagePath : "/assets/profile-image-3.png"
+        },
+        {
+            imagePath : "/assets/profile-image-4.png"
+        }
+    ]
+
     return (
 
         <div className="lg:h-[1024px] sm:h-full">
@@ -42,10 +58,10 @@ export function Hero() {
                             <button className="flex items-center justify-center gap-2 h-[44px] px-8 rounded-[16px] w-full sm:w-auto
 bg-[linear-gradient(104deg,#39F_0%,#3040E8_50%,#8C3CDD_100%)] 
 shadow-[0_16px_48px_0_rgba(100,100,150,0.15)]
-text-white text-center font-poppins text-base font-semibold leading-[130%]">
+text-white text-center font-poppins text-base font-semibold leading-[130%] cursor-pointer">
                                 Get Started Now <ArrowRight className="w-4 h-4" />
                             </button>
-                            <button className="flex items-center justify-center gap-2 h-[44px] px-8 rounded-[16px] w-full sm:w-auto bg-[rgba(255,255,255,0.70)] shadow-[0_16px_48px_0_rgba(100,100,150,0.15)] text-[#323232] text-center font-poppins text-base font-semibold leading-[130%]">
+                            <button className="flex items-center justify-center gap-2 h-[44px] px-8 rounded-[16px] w-full sm:w-auto bg-[rgba(255,255,255,0.70)] shadow-[0_16px_48px_0_rgba(100,100,150,0.15)] text-[#323232] text-center font-poppins text-base font-semibold leading-[130%] cursor-pointer">
                                 <Play className="w-4 h-4 fill-current" /> Watch Demo
                             </button>
                         </div>
@@ -64,14 +80,19 @@ text-white text-center font-poppins text-base font-semibold leading-[130%]">
                                 </svg>
                                 Trusted users around UAE <span className="font-semibold text-gray-900">5M+</span></p>
                             <div className="flex -space-x-3">
-                                {[1, 2, 3, 4].map(i => (
+                                {imageArr.map((imgArr,i)=> (
                                     <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden">
-                                        {/* Placeholder avatars */}
+                                       <Image
+    src={imgArr.imagePath}
+    alt=""
+    width={36}
+    height={36}
+  />
                                         <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300" />
                                     </div>
                                 ))}
-                                <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">
-                                    +2k
+                                <div className="w-10 h-10 rounded-full border-2 border-white bg-[#F26F55] flex items-center justify-center text-[#071516] font-dm-sans text-[14px] font-bold leading-[19.2px]">
+                                    5k+
                                 </div>
                             </div>
                         </div>
