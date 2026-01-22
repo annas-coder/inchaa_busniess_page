@@ -13,7 +13,7 @@ export function Footer() {
                         <div className="space-y-3">
                             <Link href="/" className="inline-block">
                                 <Image
-                                    src="/assets/incha-logo.png"
+                                    src="/assets/incha-logo.svg"
                                     alt="Inchaa Logo"
                                     width={126}
                                     height={24}

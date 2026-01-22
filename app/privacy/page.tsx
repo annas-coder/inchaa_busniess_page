@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
                                 Privacy <span className="bg-gradient-to-r from-[#39F] via-[#3040E8] to-[#8C3CDD] bg-clip-text text-transparent font-poppins text-[34px] font-bold leading-[130%]">Policy</span>
                             </h1>
                             <p className="text-[#76797B] text-center font-poppins text-[16px] font-normal leading-[150%]">
-                                Last updated: January 2024
+                                 Last updated: January 2026
                             </p>
                         </div>
 
