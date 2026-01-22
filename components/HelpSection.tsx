@@ -2,26 +2,31 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus, HelpCircle, Mail, MessageCircle } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 const faqData = [
     {
-        question: "How do I post a project or request a quote?",
-        answer: "To post a project, simply create an account on Inchaa, click 'Post a Project', fill in your project details including location, requirements, and upload any relevant documents. Once submitted, verified professionals in your area will be able to view your project and submit quotations. You can then compare quotes and select the best option for your needs."
+        question: "Can I have multiple accounts?",
+        answer: "No. Each user can create only one Inchaa account per phone number. If you need another account, you must use a different mobile number."
     },
     {
-        question: "How do I get verified as a contractor or consultant?",
-        answer: "To get verified, sign up as a service provider on Inchaa and complete your profile with business information, certifications, licenses, and portfolio. Our verification team will review your credentials and documents. Once approved, you'll receive a verified badge and can start receiving project requests from customers."
+        question: "How do I update my phone number?",
+        answer: "You can update your phone number from My Profile → Edit Profile. After updating, the changes will be saved to your Inchaa account."
     },
     {
-        question: "Is Inchaa free to use?",
-        answer: "Yes, Inchaa is free for customers to post projects and request quotes. There are no fees for creating an account, posting projects, or receiving quotations. Service providers can join and create profiles for free, with optional premium features available for enhanced visibility and project management tools."
+        question: "How can I delete my Inchaa account?",
+        answer: "Go to Account → Delete Account and confirm the request. Account deletion will be completed after Email OTP verification."
     },
     {
-        question: "Can I contact support for onboarding help?",
-        answer: "Absolutely! Our onboarding team is here to help you get started. You can reach out via email at support@inchaa.com or use our in-app chat feature available 24/7. Our support team can assist with account setup, profile creation, project posting, and answer any questions about using the platform."
+        question: "How do I contact customer support?",
+        answer: "You can contact our support team from Help & Support in the app. You can also email us at support@inchaa.com."
+    },
+    {
+        question: "How do I change the app language?",
+        answer: "Go to Account → Language and choose English or Arabic. The app will update based on your selected language."
     }
 ];
+
 
 export function HelpSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);

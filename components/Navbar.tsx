@@ -113,7 +113,7 @@ export function Navbar() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 z-50 relative">
                             <Image
-                                src="/assets/incha-logo.png"
+                                src="/assets/incha-logo.svg"
                                 alt="Inchaa Logo"
                                 width={126}
                                 height={24}
